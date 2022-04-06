@@ -33,7 +33,7 @@ module.exports = {
         addressShipping,
       }
 
-      const validData = await createStrapi.entityValidator.validateEntity(
+      const validData = await strapi.entityValidator.validateEntityUpdate(
         strapi.models.order,
         data
       )
